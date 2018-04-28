@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <KNIosCommonTool/KNIosCommonTool-umbrella.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [HCPEnvrionmentalVariables shareEnvrionmentalVariables].envrionmentalVariables = ENVRIONMENTAL_VARIABLES_PRODUCTION;//生产环境
     return YES;
 }
 

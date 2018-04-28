@@ -1,0 +1,16 @@
+PODS:
+  - KNIosCommonTool (0.0.1)
+
+DEPENDENCIES:
+  - KNIosCommonTool
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - KNIosCommonTool
+
+SPEC CHECKSUMS:
+  KNIosCommonTool: b22fc8d1d8509e38677d96f68413fea2eed6516d
+
+PODFILE CHECKSUM: 17f90c5114956a8549ac3737d9b6858981cb62fd
+
+COCOAPODS: 1.5.0

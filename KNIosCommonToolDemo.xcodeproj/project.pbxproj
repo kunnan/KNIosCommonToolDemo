@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9C18F99492312FC2A12E2A /* Pods_KNIosCommonToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE9E841BB741382D1BA55A7 /* Pods_KNIosCommonToolDemo.framework */; };
 		E10947EC2093EEFA00A1E659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E10947EB2093EEFA00A1E659 /* AppDelegate.m */; };
 		E10947EF2093EEFA00A1E659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10947EE2093EEFA00A1E659 /* ViewController.m */; };
 		E10947F22093EEFA00A1E659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10947F02093EEFA00A1E659 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F5BBAA3D18E000523D53B2B /* Pods-KNIosCommonToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNIosCommonToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNIosCommonToolDemo/Pods-KNIosCommonToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CBE9E841BB741382D1BA55A7 /* Pods_KNIosCommonToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNIosCommonToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10947E72093EEF900A1E659 /* KNIosCommonToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNIosCommonToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10947EA2093EEF900A1E659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E10947EB2093EEFA00A1E659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		E10947F62093EEFA00A1E659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10947F82093EEFA00A1E659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10947F92093EEFA00A1E659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4759E1AC68D52F58C60BA81 /* Pods-KNIosCommonToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNIosCommonToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNIosCommonToolDemo/Pods-KNIosCommonToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9C18F99492312FC2A12E2A /* Pods_KNIosCommonToolDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		344758EDAF5E9E52DE883C9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBE9E841BB741382D1BA55A7 /* Pods_KNIosCommonToolDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E10947DE2093EEF900A1E659 = {
 			isa = PBXGroup;
 			children = (
 				E10947E92093EEF900A1E659 /* KNIosCommonToolDemo */,
 				E10947E82093EEF900A1E659 /* Products */,
+				F8C28C4A4FDFFAD75D705D80 /* Pods */,
+				344758EDAF5E9E52DE883C9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = KNIosCommonToolDemo;
 			sourceTree = "<group>";
 		};
+		F8C28C4A4FDFFAD75D705D80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4759E1AC68D52F58C60BA81 /* Pods-KNIosCommonToolDemo.debug.xcconfig */,
+				3F5BBAA3D18E000523D53B2B /* Pods-KNIosCommonToolDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E10947FD2093EEFA00A1E659 /* Build configuration list for PBXNativeTarget "KNIosCommonToolDemo" */;
 			buildPhases = (
+				8B763D070952DA3D9479A4AC /* [CP] Check Pods Manifest.lock */,
 				E10947E32093EEF900A1E659 /* Sources */,
 				E10947E42093EEF900A1E659 /* Frameworks */,
 				E10947E52093EEF900A1E659 /* Resources */,
+				6F3B9251AD626D8EE953A6C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F3B9251AD626D8EE953A6C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KNIosCommonToolDemo/Pods-KNIosCommonToolDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KNIosCommonTool/KNIosCommonTool.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KNIosCommonTool.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNIosCommonToolDemo/Pods-KNIosCommonToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B763D070952DA3D9479A4AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KNIosCommonToolDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E10947E32093EEF900A1E659 /* Sources */ = {
@@ -276,6 +341,7 @@
 		};
 		E10947FE2093EEFA00A1E659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4759E1AC68D52F58C60BA81 /* Pods-KNIosCommonToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +356,7 @@
 		};
 		E10947FF2093EEFA00A1E659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5BBAA3D18E000523D53B2B /* Pods-KNIosCommonToolDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
